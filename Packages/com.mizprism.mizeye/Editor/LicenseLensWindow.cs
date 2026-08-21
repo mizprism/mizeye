@@ -320,7 +320,7 @@ namespace Mizprism.LicenseLens.Editor
             }
 
             GUILayout.Space(6);
-            GUILayout.Label("構造化の確度: " + detail.Confidence, EditorStyles.miniLabel);
+            GUILayout.Label("構造化の確度: " + LicenseVocabulary.ConfidenceLabel(detail.Confidence), EditorStyles.miniLabel);
             GUILayout.Label(detail.ConfidenceBasis, EditorStyles.wordWrappedMiniLabel);
 
             EditorGUILayout.EndScrollView();
