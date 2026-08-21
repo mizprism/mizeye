@@ -1,0 +1,11 @@
+{
+  "name": "MIZPRISM",
+  "id": "com.mizprism.repos.mizeye",
+  "author": "MIZPRISM",
+  "url": "https://mizprism.github.io/mizeye/index.json",
+  "packages": {
+    "com.mizprism.mizeye": {
+      "versions": {}
+    }
+  }
+}

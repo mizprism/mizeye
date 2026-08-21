@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Unity の外で Runtime のコードを検証するためのテストプロジェクト。
+       Unity は末尾が `~` のフォルダを無視するので、パッケージに同梱されても
+       Unity 側のコンパイル対象にはならない。
+
+       Runtime/*.cs は**コピーせずリンク**する — 実装を 2 箇所に持つと、
+       片方だけ直った時に検証が沈黙する。 -->
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <Nullable>disable</Nullable>
+    <IsPackable>false</IsPackable>
+    <RootNamespace>Mizprism.LicenseLens.Tests</RootNamespace>
+    <!-- 実際に Unity へ配るのは netstandard2.1 なので、その範囲を超える API を
+         使っていないかは Runtime 側の別ビルドで確かめる (LangVersion 9 = Unity 2022.3 相当) -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="../Runtime/**/*.cs" LinkBase="Runtime" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
+    <PackageReference Include="xunit" Version="2.9.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2" />
+  </ItemGroup>
+
+</Project>

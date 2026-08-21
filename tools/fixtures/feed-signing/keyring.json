@@ -1,0 +1,15 @@
+{
+ "$comment": [
+  "回帰テスト専用の使い捨て鍵。秘密鍵は生成直後に破棄しており、どこにも存在しない。",
+  "本番の鍵リングはパッケージに同梱されている。"
+ ],
+ "keys": [
+  {
+   "key_id": "sha256:afba589be719f4661d50a2a00b616f8b396efbd3fa1b3b11c3c52e9afa19d49f",
+   "public_key_hex": "23842ba617ba5c74eb2212ffffa5136fdd2cd14bb1a202538f0943d982ccef52",
+   "status": "current",
+   "since": "2026-08-13",
+   "note": "throwaway key for the signature tests"
+  }
+ ]
+}

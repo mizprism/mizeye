@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MizEye — VPM リポジトリ</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0 auto; padding: 2.5rem 1.25rem; max-width: 42rem;
+    font-family: system-ui, -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif;
+    line-height: 1.8; font-size: 16px;
+  }
+  h1 { font-size: 1.6rem; margin: 0 0 .25rem; }
+  .lede { margin: 0 0 2rem; opacity: .75; }
+  h2 { font-size: 1.05rem; margin: 2.2rem 0 .6rem; }
+  code, .url {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .95em;
+  }
+  .url {
+    display: block; padding: .8rem 1rem; margin: .6rem 0 .3rem;
+    border: 1px solid currentColor; border-radius: 6px;
+    overflow-wrap: anywhere; opacity: .95;
+  }
+  ol { padding-left: 1.3rem; }
+  .note { opacity: .75; font-size: .92em; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid; opacity: .5; font-size: .88em; }
+  a { color: inherit; }
+</style>
+</head>
+<body>
+
+<h1>MizEye</h1>
+<p class="lede">やさしい規約ビューア — VPM リポジトリ</p>
+
+<p>
+  VRChat 向け商品の利用規約を Unity 上で確認するためのビューアです。
+  署名付きの公開フィードを読み取る read-only のツールで、プロジェクトを一切変更しません。
+</p>
+
+<h2>VCC に追加する</h2>
+<ol>
+  <li>VCC の <strong>Settings &gt; Packages &gt; Add Repository</strong> に次の URL を追加します
+    <span class="url">https://mizprism.github.io/mizeye/index.json</span>
+  </li>
+  <li>プロジェクトの <strong>Manage Project</strong> から <strong>MizEye</strong> を Add します</li>
+  <li>Unity で <strong>Window &gt; MIZPRISM &gt; MizEye</strong> を開きます</li>
+</ol>
+
+<h2>v0.1 の範囲</h2>
+<p class="note">
+  アバター素体を中心とした動作テスト版です。<strong>網羅性は主張しません。</strong>
+  未収載の商品は「未収載」と表示し、推測で埋めることはしません。
+  返すのは整理であって判定ではなく、最終的な判断と責任は利用者にあります。
+  対応 Unity は 2022.3、対応 OS は Windows / Linux です。
+</p>
+
+<footer>
+  <a href="https://github.com/mizprism/mizeye">リポジトリと README</a> ·
+  <a href="https://github.com/mizprism/mizeye/blob/main/LICENSING.md">ライセンス構成</a> ·
+  MizEye by MIZPRISM
+</footer>
+
+</body>
+</html>

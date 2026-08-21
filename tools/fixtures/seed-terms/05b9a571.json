@@ -1,0 +1,160 @@
+{
+ "schema_version": "1.2",
+ "terms_id": "sha256:05b9a5712cc2a345683aaf0e86ceda253bf8aa3fbdfb7808836d7d59db99e9cc",
+ "title": "「ミーシェ」3Dモデル利用規約",
+ "rights_holder": "ぽんでろ",
+ "credit_display": "ポンデロニウム研究所",
+ "scope_note": "item 単位 — 許諾対象データ = 「ミーシェ」3Dモデル",
+ "sources": [
+  {
+   "url": "https://drive.google.com/file/d/1T1zjIU-5wb_5eSpb2RsmTNSbw5wtu9zy/view?usp=sharing",
+   "location_type": "external_google_drive_pdf",
+   "role": "primary",
+   "fetched_at": "2026-08-13T06:55:01Z",
+   "content_hash": "sha256:05b9a5712cc2a345683aaf0e86ceda253bf8aa3fbdfb7808836d7d59db99e9cc",
+   "note": "BOOTH 説明文が指す Drive 上の規約 PDF (VN3 ライセンス Ver.1.00 準拠のジェネレータ出力)。原本バイトは /uc 例外 2026-08-09 による",
+   "pages": 10
+  }
+ ],
+ "dialect": "vn3-template",
+ "terms_version": "1.00",
+ "permission_matrix": {
+  "A_individual_use": {
+   "value": "allowed",
+   "quote": "営利・非営利の目的問わず利用を許可します"
+  },
+  "B_corporate_use": {
+   "value": "allowed",
+   "quote": "営利・非営利の目的問わず利用を許可します"
+  },
+  "C_upload_social_platform": {
+   "value": "allowed",
+   "quote": "許可します"
+  },
+  "D_upload_game_platform": {
+   "value": "allowed",
+   "quote": "許可します"
+  },
+  "E_upload_for_third_party_use": {
+   "value": "forbidden",
+   "quote": "許可しません"
+  },
+  "F_sexual_expression": {
+   "value": "conditional",
+   "quote": "許可します（ただし棲み分けはおこなうこと）",
+   "note": "許可します (ただし棲み分けはおこなうこと)"
+  },
+  "G_violent_expression": {
+   "value": "conditional",
+   "quote": "許可します（ただし棲み分けはおこなうこと）",
+   "note": "許可します (ただし棲み分けはおこなうこと)"
+  },
+  "H_political_religious": {
+   "value": "forbidden",
+   "quote": "許可しません"
+  },
+  "I_adjustment": {
+   "value": "allowed",
+   "quote": "許可します"
+  },
+  "J_modification": {
+   "value": "allowed",
+   "quote": "許可します"
+  },
+  "K_use_for_modifying_other_data": {
+   "value": "allowed",
+   "quote": "許可します"
+  },
+  "L_outsource_modification": {
+   "value": "unclear",
+   "quote": "権利者に個別に問い合わせて下さい",
+   "note": "権利者に個別に問い合わせて下さい"
+  },
+  "M_redistribute_unmodified": {
+   "value": "forbidden",
+   "quote": "許可しません"
+  },
+  "N_distribute_modified": {
+   "value": "forbidden",
+   "quote": "許可しません"
+  },
+  "O_video_streaming_broadcast": {
+   "value": "allowed",
+   "quote": "許可します"
+  },
+  "P_publishing": {
+   "value": "allowed",
+   "quote": "許可します"
+  },
+  "Q_physical_goods": {
+   "value": "allowed",
+   "quote": "許可します"
+  },
+  "R_product_development": {
+   "value": "unclear",
+   "quote": "権利者に個別に問い合わせて下さい",
+   "note": "権利者に個別に問い合わせて下さい"
+  },
+  "S_outfit_data_with_mesh_weight": {
+   "value": "conditional",
+   "quote": "営利・非営利の目的問わず配布等（頒布、送信を含む）を許可します",
+   "note": "営利・非営利の目的問わず配布等 (頒布、送信を含む) を許可 — ただし個別条件の項目名側に除外句あり: ただし改変が著しく少ない場合を除きます"
+  },
+  "T_outfit_data_without_mesh_weight": {
+   "value": "allowed",
+   "quote": "営利・非営利の目的問わず配布等（頒布、送信を含む）を許可します"
+  },
+  "U_derivative_works": {
+   "value": "allowed",
+   "quote": "営利・非営利の目的問わず配布等（頒布、送信を含む）を許可します"
+  },
+  "V_credit": {
+   "value": "not_required",
+   "quote": "不要ですがあると嬉しいです"
+  },
+  "W_transfer_rights": {
+   "value": "forbidden",
+   "quote": "許可しません"
+  },
+  "X_special_notes": {
+   "value": "note",
+   "quote": "特記事項衣装を製作する際にご連絡していただけれるとありがたいです。"
+  }
+ },
+ "matrix_overrides": [],
+ "attributes_derived": {
+  "commercial_use": "allowed",
+  "avatar_modification": "allowed",
+  "redistribution": "forbidden",
+  "parts_reuse": "allowed",
+  "credit_required": "not_required",
+  "monetized_streaming": "allowed",
+  "commissioned_editing": "unclear"
+ },
+ "conditions": [
+  {
+   "matrix_key": "S_outfit_data_with_mesh_weight",
+   "note": "メッシュ・ウェイトを転用した衣装データは、改変が著しく少ない場合が対象外 (標準 VN3 の除外句)",
+   "quote": "本データのメッシュやウェイトをコピーして、本データのための衣装データ等を作成すること\n               （ただし改変が著しく少ない場合を除きます）"
+  },
+  {
+   "matrix_key": "F_sexual_expression",
+   "note": "性的・暴力的表現への利用は許可されるが、棲み分け (ゾーニング) が条件 (G も同文)",
+   "quote": "許可します（ただし棲み分けはおこなうこと）"
+  },
+  {
+   "matrix_key": "X_special_notes",
+   "note": "特記事項は任意要請であって義務条件ではない (§0-2) — どの値も動かしていない",
+   "quote": "衣装を製作する際にご連絡していただけれるとありがたいです。"
+  }
+ ],
+ "confidence": "high",
+ "confidence_basis": "VN3 ライセンス Ver.1.00 準拠のジェネレータ出力 PDF を一次資料として直読み。24 行すべて個別条件「2.利用条件」の本文行から採録し、簡易一覧 (参考資料) は照合のみに使用。決定論抽出の提案を原文と 1 行ずつ突き合わせて訂正 0 を確認した",
+ "unclear_points": [
+  "L (改変委託) と R (製品組み込み) は問い合わせ制で事前判定不可",
+  "許諾期間の定めはないが、権利者が周知した条件変更は効力発生日以降の利用に及ぶ — 定期監視が要る",
+  "特記の「ご連絡」は任意要請と読んだ (§0-2)。義務と読む余地は残るが、文言に義務語がない"
+ ],
+ "last_verified_at": "2026-08-13T06:55:00Z",
+ "structuring_notes": "wave 7 (2026-08-13) で段③ が deterministic 判定した文書。行字義 matrix はパーサ提案をそのまま採り、人は原文との突き合わせ (訂正 0) と人間欄の起票のみを行った。B (法人) が無条件許可の型で、commercial_use=allowed は seed でも少数"
+}

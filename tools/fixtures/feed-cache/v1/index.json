@@ -1,0 +1,39 @@
+{
+ "chunks": [
+  {
+   "bytes": 317,
+   "path": "items/00.json",
+   "sha256": "sha256:95d7512983e1fd9d24bcb81ce9c9e93ca7febd7a2fdd541cf99be3ef2e7c8b0f"
+  },
+  {
+   "bytes": 320,
+   "path": "items/01.json",
+   "sha256": "sha256:96b42f9296292a0a2b472f62442aaeed76091a679ba46c5ae49be84775229565"
+  },
+  {
+   "bytes": 264,
+   "path": "terms/11111111.json",
+   "sha256": "sha256:9a82afcfc0ad9eaccdfbba6c6c2bd1c4a66912477706603665e3a4ea6e248c45"
+  },
+  {
+   "bytes": 264,
+   "path": "terms/22222222.json",
+   "sha256": "sha256:90b09f4929d7a86fe63f55db5e81db5880c41ee03a4a29530a99fe4b081d8c14"
+  }
+ ],
+ "counts": {
+  "items": 2,
+  "terms": 2
+ },
+ "data_as_of": "2026-08-01T00:00:00Z",
+ "feed_schema_version": "0.1",
+ "item_shards": 16,
+ "license": {
+  "attribution": "MIZPRISM License Lens (fixture)",
+  "data": "CC-BY-4.0"
+ },
+ "record_schema_versions": [
+  "1.2"
+ ],
+ "signing_key_id": "sha256:be78e5995d27fa3ef3b21e80491b714544dfd97db1d56405841ed22b62c91e79"
+}

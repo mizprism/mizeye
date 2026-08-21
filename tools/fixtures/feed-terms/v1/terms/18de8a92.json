@@ -1,0 +1,253 @@
+{
+ "attributes_derived": {
+  "avatar_modification": "allowed",
+  "commercial_use": "conditional",
+  "commissioned_editing": "conditional",
+  "credit_required": "not_required",
+  "monetized_streaming": "conditional",
+  "parts_reuse": "allowed",
+  "redistribution": "forbidden"
+ },
+ "conditions": [
+  {
+   "matrix_key": "X_special_notes",
+   "note": "VTuber・タレント活動等への利用は 2 条件 (十分な改変 + 法人からの業務非受託) を満たす場合に限り許可。特記事項優先規則により O/P の一覧表値を上書きする",
+   "quote": "VTuber・タレント活動等への利用については、オリジナルと異なることが分かる程度に改変した場合は（公式活動と誤解されないため）法人から業務を受託しない場合に限り許可します。"
+  },
+  {
+   "matrix_key": "X_special_notes",
+   "note": "特記事項の優先規則 (基本条項 第２条2項) — 特記事項が他の定めに優先するため、O/P は最終実効値を採録している",
+   "quote": "特記事項の定めと他の定めに関しては、前者が優先するものとします。"
+  },
+  {
+   "matrix_key": "S_outfit_data_with_mesh_weight",
+   "note": "メッシュ・ウェイト転用衣装は改変が著しく少ない場合を除く (除外句は可否欄でなく項目名側に置かれている)",
+   "quote": "ただし改変が著しく少ない場合を除きます"
+  },
+  {
+   "matrix_key": "L_outsource_modification",
+   "note": "調整・改変の第三者委託はユーザー間に限る (委託先には目的外利用禁止の義務付けと連帯責任が伴う)",
+   "quote": "ユーザー間で行うことを許可します"
+  },
+  {
+   "matrix_key": "F_sexual_expression",
+   "note": "性的表現・暴力的表現は棲み分けが条件 (F/G 共通の表現)",
+   "quote": "許可します（ただし棲み分けはおこなうこと）"
+  },
+  {
+   "matrix_key": "X_special_notes",
+   "note": "許諾期間の定めなし。条件変更はウェブサイト・ブログ等での周知後、効力発生日以降の利用で同意とみなされる — 定期監視が必要な根拠",
+   "quote": "その効力発生日以降にユーザーが本データを利用した場合は、当該変更に同意したものとみなします。"
+  },
+  {
+   "matrix_key": "X_special_notes",
+   "note": "翻訳版 (en/ko/zh) は参考添付にすぎず拘束力を持たない — 日本語版が正文",
+   "quote": "本利用規約の翻訳がある場合でも、当該翻訳は参考のために添付されたものに過ぎず、権利者およびユーザーを一切拘束しません。"
+  }
+ ],
+ "confidence": "high",
+ "confidence_basis": "規約原文 PDF 全 10 ページ (pdfinfo 実測。file(1) は 8 ページと誤申告) を Read tool で全ページ視覚読解し、pdftotext -layout の全文抽出とクロスチェック。簡易一覧表 (p.1) と個別条件本文 (p.7-10) の値が全 24 項目で一致。全 quote を NFKC 正規化 + 空白/ゼロ幅文字除去で原文全文に機械照合済み",
+ "credit_display": "@三丁目の魔界",
+ "dialect": "vn3-template",
+ "last_verified_at": "2026-08-07T09:31:00Z",
+ "matrix_overrides": [
+  {
+   "basis": "special_notes",
+   "keys": [
+    "O_video_streaming_broadcast",
+    "P_publishing"
+   ],
+   "note": "特記事項 X が「VTuber・タレント活動等への利用」に 2 条件 (オリジナルと異なることが分かる程度の改変 + 法人から業務を受託しないこと) を課し、第２条2項により特記事項が優先する。当該活動以外の映像・配信・放送・出版利用は行値どおり無条件許可",
+   "quote": "VTuber・タレント活動等への利用については、オリジナルと異なることが分かる程度に改変した場合は（公式活動と誤解されないため）法人から業務を受託しない場合に限り許可します。",
+   "to": "conditional"
+  }
+ ],
+ "permission_matrix": {
+  "A_individual_use": {
+   "note": "営利・非営利の目的問わず利用を許可します。ただし VTuber・タレント活動等への利用は特記事項 X の条件下 (改変 + 法人業務非受託)",
+   "quote": "営利・非営利の目的問わず利用を許可します",
+   "value": "allowed"
+  },
+  "B_corporate_use": {
+   "note": "権利者に個別に問い合わせて下さい",
+   "quote": "権利者に個別に問い合わせて下さい",
+   "value": "unclear"
+  },
+  "C_upload_social_platform": {
+   "note": "自ら利用する目的でのアップロード。VRChat、Virtual Cast、cluster 等を含む",
+   "quote": "自ら利用する目的で、ソーシャルコミュニケーションプラットフォーム",
+   "value": "allowed"
+  },
+  "D_upload_game_platform": {
+   "note": "自ら利用する目的でのオンラインゲームプラットフォームへのアップロード",
+   "quote": "許可します",
+   "value": "allowed"
+  },
+  "E_upload_for_third_party_use": {
+   "note": "そのプラットフォームにおいて第三者に利用させる目的でのアップロードは不可",
+   "quote": "許可しません",
+   "value": "forbidden"
+  },
+  "F_sexual_expression": {
+   "note": "許可 (ただし棲み分け条件)。18禁表現には専用ハッシュタグ #RadDollR の使用が推奨されている",
+   "quote": "許可します（ただし棲み分けはおこなうこと）",
+   "value": "conditional"
+  },
+  "G_violent_expression": {
+   "note": "許可 (ただし棲み分け条件)",
+   "quote": "許可します（ただし棲み分けはおこなうこと）",
+   "value": "conditional"
+  },
+  "H_political_religious": {
+   "note": "政治活動への利用および、宗教活動への利用は不可",
+   "quote": "許可しません",
+   "value": "forbidden"
+  },
+  "I_adjustment": {
+   "note": "調整、外観を損なわない範囲でのポリゴン数削減、ファイル形式変換を許可",
+   "quote": "許可します",
+   "value": "allowed"
+  },
+  "J_modification": {
+   "note": "改変および改変データを本データと同じ条件で利用することを許可 (主たる素体としての改変を含む)",
+   "quote": "許可します",
+   "value": "allowed"
+  },
+  "K_use_for_modifying_other_data": {
+   "note": "他のデータを改変する目的での利用 (従たる素体としての利用) を許可",
+   "quote": "許可します",
+   "value": "allowed"
+  },
+  "L_outsource_modification": {
+   "note": "調整・改変の第三者委託および委託のための貸与は、ユーザー間で行う場合に限り許可",
+   "quote": "ユーザー間で行うことを許可します",
+   "value": "conditional"
+  },
+  "M_redistribute_unmodified": {
+   "quote": "許可しません",
+   "value": "forbidden"
+  },
+  "N_distribute_modified": {
+   "quote": "許可しません",
+   "value": "forbidden"
+  },
+  "O_video_streaming_broadcast": {
+   "note": "個別条件 O の表は「許可します」(映像作品・配信・放送)。VTuber・タレント活動等への利用条件は matrix_overrides 参照",
+   "quote": "許可します",
+   "value": "allowed"
+  },
+  "P_publishing": {
+   "note": "個別条件 P の表は「許可します」(出版物および電子出版物への利用)。VTuber・タレント活動の一環としての利用条件は matrix_overrides 参照",
+   "quote": "出版物および電子出版物への利用",
+   "value": "allowed"
+  },
+  "Q_physical_goods": {
+   "note": "有体物 (グッズ) への利用は権利者に個別に問い合わせて下さい",
+   "quote": "権利者に個別に問い合わせて下さい",
+   "value": "unclear"
+  },
+  "R_product_development": {
+   "note": "製品開発等のためのソフトウェアへの組み込みは権利者に個別に問い合わせて下さい",
+   "quote": "権利者に個別に問い合わせて下さい",
+   "value": "unclear"
+  },
+  "S_outfit_data_with_mesh_weight": {
+   "note": "営利・非営利の目的問わず配布等 (頒布、送信を含む) を許可 — ただし個別条件の項目名側に除外句あり: 改変が著しく少ない場合を除く",
+   "quote": "ただし改変が著しく少ない場合を除きます",
+   "value": "conditional"
+  },
+  "T_outfit_data_without_mesh_weight": {
+   "note": "メッシュ・ウェイトを利用しない規格準拠の新規衣装・テクスチャは営利・非営利問わず配布等を許可",
+   "quote": "営利・非営利の目的問わず配布等（頒布、送信を含む）を許可します",
+   "value": "allowed"
+  },
+  "U_derivative_works": {
+   "note": "本データをそのまま利用しない二次的著作物 (二次創作) は営利・非営利問わず配布等を許可",
+   "quote": "営利・非営利の目的問わず配布等（頒布、送信を含む）を許可します",
+   "value": "allowed"
+  },
+  "V_credit": {
+   "note": "不要ですがあると嬉しいです (指定表記は @三丁目の魔界)",
+   "quote": "不要ですがあると嬉しいです",
+   "value": "not_required"
+  },
+  "W_transfer_rights": {
+   "quote": "許可しません",
+   "value": "forbidden"
+  },
+  "X_special_notes": {
+   "note": "特記事項は 1 項のみ: VTuber・タレント活動等への利用は (1) オリジナルと異なることが分かる程度の改変 + (2) 法人から業務を受託しないこと、の両方を満たす場合に限り許可 (公式活動と誤解されないため)。第２条2項により特記事項は他の定めに優先する",
+   "quote": "VTuber・タレント活動等への利用については、オリジナルと異なることが分かる程度に改変した場合は（公式活動と誤解されないため）法人から業務を受託しない場合に限り許可します。",
+   "value": "note"
+  }
+ },
+ "permission_matrix_effective": {
+  "_derived": "compose_effective(permission_matrix, matrix_overrides) の決定論合成。保存レイヤーではない — 正本は permission_matrix (行字義) と matrix_overrides (横断適用) の 2 層",
+  "values": {
+   "A_individual_use": "allowed",
+   "B_corporate_use": "unclear",
+   "C_upload_social_platform": "allowed",
+   "D_upload_game_platform": "allowed",
+   "E_upload_for_third_party_use": "forbidden",
+   "F_sexual_expression": "conditional",
+   "G_violent_expression": "conditional",
+   "H_political_religious": "forbidden",
+   "I_adjustment": "allowed",
+   "J_modification": "allowed",
+   "K_use_for_modifying_other_data": "allowed",
+   "L_outsource_modification": "conditional",
+   "M_redistribute_unmodified": "forbidden",
+   "N_distribute_modified": "forbidden",
+   "O_video_streaming_broadcast": "conditional",
+   "P_publishing": "conditional",
+   "Q_physical_goods": "unclear",
+   "R_product_development": "unclear",
+   "S_outfit_data_with_mesh_weight": "conditional",
+   "T_outfit_data_without_mesh_weight": "allowed",
+   "U_derivative_works": "allowed",
+   "V_credit": "not_required",
+   "W_transfer_rights": "forbidden",
+   "X_special_notes": "note"
+  }
+ },
+ "recommended_hashtag": "#RadDoll",
+ "recommended_hashtag_note": "原文「一般用 #RadDoll 18禁表現 #RadDollR」— 用途で 2 本を使い分ける指定 (一般用 #RadDoll / 18禁表現 #RadDollR)",
+ "rights_holder": "まおー",
+ "schema_version": "1.2",
+ "scope_note": "item 単位規約 (許諾対象データ = 「RadDollV3 3Dモデル、これらに付属するデータ一式」)。規約 PDF は BOOTH 説明文がリンクする Drive 共有フォルダ「RadDollV3_規約」で ja/en/ko/zh の 4 言語版として配布され、日本語版が正文 (基本条項 第８条2項により翻訳は参考添付で拘束力なし)",
+ "sources": [
+  {
+   "content_hash": "sha256:18de8a92141d8560295c847adce39779f29bebb577d1240e1a9e5ea79ff6ebac",
+   "fetched_at": "2026-08-07T09:31:00Z",
+   "location_type": "external_google_drive_pdf",
+   "note": "日本語正文 (RadDollV3_vn3license_ja.pdf)。pdfinfo 実測 10 ページ (file(1) は 8 ページと誤申告)。PDF メタデータ Title=20250930121707vn3license_ja。独立した 2 回の取得で同一 hash — 取得決定性確認済み",
+   "pages": 10,
+   "role": "primary",
+   "url": "https://drive.google.com/file/d/13GNqK2tbt_cAf4sUG8qnSDb8lg6_0d-t/view"
+  },
+  {
+   "location_type": "external_web_page",
+   "note": "BOOTH 説明文「利用規約」節がリンクする Drive 共有フォルダ (フォルダ名 RadDollV3_規約)。直接ファイルリンクではないためフォルダ解決が必要 — embeddedfolderview で RadDollV3_vn3license_{ja,en,ko,zh}.pdf の 4 ファイルを確認。フォルダ自体は hash 監視対象外 (ファイル差替えはフォルダ経由では検知できず、primary の hash 監視で検知する)",
+   "role": "entry",
+   "url": "https://drive.google.com/drive/folders/1WSbS2Hqoj6WI68-aTAs8gt8HS9h-gHht?usp=sharing"
+  },
+  {
+   "content_hash": "sha256:43ce6965d4d2aecea2067d18b2327830e216ace62726214c6157f851d73f9cd3",
+   "fetched_at": "2026-08-07T14:35:00Z",
+   "location_type": "booth_description",
+   "note": "規約リンクの掲出元。説明文に実質条項はなく (見出し「利用規約」+ Drive フォルダ URL のみ)、記載の更新履歴 3.00/3.01/3.02 はモデル本体の版であって規約の改訂履歴ではない。content_hash は canonical text v1 の hash (実質条項はないが D3 全ソース hash 監視に合わせ 2026-08-07 監査で記録)",
+   "role": "secondary",
+   "url": "https://booth.pm/ja/items/3741802"
+  }
+ ],
+ "structuring_notes": "所在型の新パターン: 規約 URL が Drive の**共有フォルダ**リンク (これまでの単一ファイルリンク / 生きた Google Docs / JS リダイレクタ / BOOTH 説明文内 に続く第 6 型)。フォルダ内に ja/en/ko/zh の 4 言語 PDF があり、フォルダ解決 (embeddedfolderview) を経ないと primary ファイル ID が得られない。無料配布モデルだが規約は外部 PDF で完備 (同梱ファイル限定ではなかった)。O/P は特記事項優先規則 (第２条2項) を適用した最終実効値を採録",
+ "terms_id": "sha256:18de8a92141d8560295c847adce39779f29bebb577d1240e1a9e5ea79ff6ebac",
+ "terms_version": "1.00",
+ "title": "RadDollV3利用規約",
+ "unclear_points": [
+  "B 法人利用・Q 有体物 (グッズ)・R 製品開発は「権利者に個別に問い合わせて下さい」",
+  "特記事項の「VTuber・タレント活動等」の外延が不明確 (どこまでがタレント活動等に含まれるか。O/P/Q への波及範囲の判断は個別事案依存)",
+  "特記事項の「法人から業務を受託しない場合に限り」は B 法人利用の個別問い合わせ枠と重なるが、両者の関係は明示されていない",
+  "許諾期間の定めなし。条件変更は権利者の周知後の利用で同意扱い — 定期監視が必要"
+ ]
+}

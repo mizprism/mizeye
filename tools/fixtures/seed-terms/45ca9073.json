@@ -1,0 +1,185 @@
+{
+ "schema_version": "1.2",
+ "terms_id": "sha256:45ca90737e9cf1cf15d43ecb92a0798605af24867567c1cdcccb4317991d0945",
+ "title": "「しなの」3Dモデル利用規約",
+ "rights_holder": "ぽんでろ (ポンデロニウム研究所)",
+ "credit_display": "@ぽんでろ",
+ "recommended_hashtag": "#Shinano3D",
+ "sources": [
+  {
+   "url": "https://drive.google.com/file/d/15naalnvWyBmebHCfG0hY8-N2PD2ihMhe/view",
+   "location_type": "external_google_drive_pdf",
+   "fetched_at": "2026-08-07T05:55:00Z",
+   "content_hash": "sha256:45ca90737e9cf1cf15d43ecb92a0798605af24867567c1cdcccb4317991d0945",
+   "pages": 10,
+   "role": "primary"
+  },
+  {
+   "url": "https://booth.pm/ja/items/6106863",
+   "location_type": "booth_description",
+   "fetched_at": "2026-08-07T14:35:00Z",
+   "content_hash": "sha256:e14786198098d74c010201ede4a130b207aa1e7012166674a03fdf811880fed7",
+   "role": "secondary",
+   "note": "規約リンクの掲出元。hash は canonical text v1 (tools/booth_desc_extract.py)、2026-08-07 監査で記録"
+  }
+ ],
+ "dialect": "vn3-template",
+ "terms_version": "1.00",
+ "permission_matrix": {
+  "A_individual_use": {
+   "value": "allowed",
+   "note": "営利・非営利の目的問わず利用を許可",
+   "quote": "営利・非営利の目的問わず利用を許可します"
+  },
+  "B_corporate_use": {
+   "value": "allowed",
+   "note": "営利・非営利の目的問わず利用を許可",
+   "quote": "営利・非営利の目的問わず利用を許可します"
+  },
+  "C_upload_social_platform": {
+   "value": "allowed",
+   "note": "VRChat, Virtual Cast, cluster 等を含む",
+   "quote": "許可します"
+  },
+  "D_upload_game_platform": {
+   "value": "allowed",
+   "quote": "許可します"
+  },
+  "E_upload_for_third_party_use": {
+   "value": "forbidden",
+   "quote": "許可しません"
+  },
+  "F_sexual_expression": {
+   "value": "conditional",
+   "note": "許可 (ただし棲み分けはおこなうこと)",
+   "quote": "許可します（ただし棲み分けはおこなうこと）"
+  },
+  "G_violent_expression": {
+   "value": "conditional",
+   "note": "許可 (ただし棲み分けはおこなうこと)",
+   "quote": "許可します（ただし棲み分けはおこなうこと）"
+  },
+  "H_political_religious": {
+   "value": "forbidden",
+   "quote": "許可しません"
+  },
+  "I_adjustment": {
+   "value": "allowed",
+   "note": "調整、外観を損なわない範囲でのポリゴン数削減、ファイル形式変換",
+   "quote": "許可します"
+  },
+  "J_modification": {
+   "value": "allowed",
+   "note": "改変データを本データと同じ条件で利用可",
+   "quote": "許可します"
+  },
+  "K_use_for_modifying_other_data": {
+   "value": "allowed",
+   "note": "他モデルを主たる素体として改変を行う場合を含む",
+   "quote": "許可します"
+  },
+  "L_outsource_modification": {
+   "value": "conditional",
+   "note": "ユーザー間で行うことを許可します",
+   "quote": "ユーザー間で行うことを許可します"
+  },
+  "M_redistribute_unmodified": {
+   "value": "forbidden",
+   "quote": "許可しません"
+  },
+  "N_distribute_modified": {
+   "value": "forbidden",
+   "quote": "許可しません"
+  },
+  "O_video_streaming_broadcast": {
+   "value": "allowed",
+   "quote": "許可します"
+  },
+  "P_publishing": {
+   "value": "allowed",
+   "quote": "許可します"
+  },
+  "Q_physical_goods": {
+   "value": "allowed",
+   "quote": "許可します"
+  },
+  "R_product_development": {
+   "value": "unclear",
+   "note": "権利者に個別に問い合わせて下さい",
+   "quote": "権利者に個別に問い合わせて下さい"
+  },
+  "S_outfit_data_with_mesh_weight": {
+   "value": "conditional",
+   "note": "営利・非営利の目的問わず配布等 (頒布、送信を含む) を許可 — ただし個別条件の項目名に除外句あり: 改変が著しく少ない場合を除く",
+   "quote": "営利・非営利の目的問わず配布等（頒布、送信を含む）を許可します"
+  },
+  "T_outfit_data_without_mesh_weight": {
+   "value": "allowed",
+   "note": "同上",
+   "quote": "営利・非営利の目的問わず配布等（頒布、送信を含む）を許可します"
+  },
+  "U_derivative_works": {
+   "value": "allowed",
+   "note": "営利・非営利の目的問わず許可",
+   "quote": "営利・非営利の目的問わず配布等（頒布、送信を含む）を許可します"
+  },
+  "V_credit": {
+   "value": "not_required",
+   "note": "不要ですがあると嬉しいです。クレジット表記: @ぽんでろ",
+   "quote": "不要ですがあると嬉しいです"
+  },
+  "W_transfer_rights": {
+   "value": "forbidden",
+   "quote": "許可しません"
+  },
+  "X_special_notes": {
+   "value": "note",
+   "note": "商用利用の際は X(Twitter) @ponderogen までご報告いただけると幸い (任意表現)",
+   "quote": "特記事項本データを商用利用した際にはぽんでろのX(Twitter)までご報告いただけると幸いです。\nご連絡はX(Twitter)の方までお願いいたします。"
+  }
+ },
+ "matrix_overrides": [],
+ "attributes_derived": {
+  "commercial_use": "allowed",
+  "avatar_modification": "allowed",
+  "redistribution": "forbidden",
+  "parts_reuse": "allowed",
+  "credit_required": "not_required",
+  "monetized_streaming": "allowed",
+  "commissioned_editing": "conditional"
+ },
+ "conditions": [
+  {
+   "matrix_key": "X_special_notes",
+   "note": "商用利用時は @ponderogen への報告が推奨 (任意)",
+   "quote": "本データを商用利用した際にはぽんでろのX(Twitter)までご報告いただけると幸いです"
+  },
+  {
+   "matrix_key": "L_outsource_modification",
+   "note": "調整・改変の第三者委託はユーザー間 (購入者同士) に限る",
+   "quote": "ユーザー間で行うことを許可します"
+  },
+  {
+   "matrix_key": "S_outfit_data_with_mesh_weight",
+   "note": "メッシュ転用衣装は改変が著しく少ない場合は不可",
+   "quote": "ただし改変が著しく少ない場合を除きます"
+  },
+  {
+   "matrix_key": "X_special_notes",
+   "note": "言語優先条項 (第 8 条 2 項本文) — 許諾は日本語でなされ、翻訳があっても参考添付にすぎず拘束力を持たない。多言語版が出た時にどの版の読みが行字義かを決める根拠",
+   "quote": "本許諾は日本語によってなされるものとします。本利用規約の翻訳がある場合でも、当該翻訳は参考のために添付されたものに過ぎず、権利者およびユーザーを一切拘束しません。"
+  },
+  {
+   "matrix_key": "X_special_notes",
+   "note": "同項但書 — 個別条件の定めや個別の指示等が日本語以外の言語でのみ行われている場合は、その定め・指示に限り翻訳不拘束の原則が適用されない",
+   "quote": "ただし、個別条件の定めおよび本利用規約に基づいて行われる個別の指示等が、日本語以外の言語でのみ行われている場合は、当該定めおよび指示等に限り、この限りではありません。"
+  }
+ ],
+ "confidence": "high",
+ "confidence_basis": "規約原文 PDF 全 10 ページ (視覚読解 + 末尾ページのテキスト抽出)。独立レビュー (code-reviewer) で S 除外句の欠落・pages 誤申告を検出し修正済み",
+ "unclear_points": [
+  "R (製品開発等への組み込み) は個別問い合わせ制",
+  "許諾期間の定めなし。条件変更は権利者の周知後・効力発生日以降の利用に適用 — 定期的な変更監視が必要"
+ ],
+ "last_verified_at": "2026-08-07T05:55:00Z"
+}

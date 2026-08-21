@@ -1,0 +1,13 @@
+{
+ "items": [
+  {
+   "booth_item_id": 1000017,
+   "name": "テスト素体 みどり",
+   "shop": "フィクスチャ工房",
+   "shop_subdomain": "fixture",
+   "terms_ref": "sha256:2222222222222222222222222222222222222222222222222222222222222222",
+   "url": "https://booth.pm/ja/items/1000017"
+  }
+ ],
+ "shard": "01"
+}

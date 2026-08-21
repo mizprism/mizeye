@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Runtime を **配る先の土俵** でコンパイルするだけのプロジェクト (成果物は使わない)。
+
+       なぜ要るのか: テストは net10.0 で走っており、そこで緑でも Unity 2022.3
+       (netstandard2.1) で通るとは限らない。net10.0 にしか無い API を 1 つ使った瞬間、
+       テストは緑のまま利用者の環境でだけビルドが落ちる — CI に出ないので、
+       気付くのは配った後になる。
+
+       LangVersion 9.0 は Unity 2022.3 相当。EnableDefaultCompileItems を false に
+       しているのは、このファイルが Tests~ に同居しており、既定のグロブだと xunit に
+       依存するテストまで拾ってしまうため (Tests~ に置く理由は Unity がこの名前の
+       フォルダを無視するから)。 -->
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <Nullable>disable</Nullable>
+    <IsPackable>false</IsPackable>
+    <RootNamespace>Mizprism.LicenseLens</RootNamespace>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <!-- 警告を落とさない: 配る土俵で出る警告は、配る前に見る -->
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- コピーせずリンクする (実装を 2 箇所に持つと片方だけ直った時に検証が沈黙する) -->
+    <Compile Include="../Runtime/**/*.cs" LinkBase="Runtime" />
+  </ItemGroup>
+
+</Project>

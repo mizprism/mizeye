@@ -1,0 +1,7 @@
+# dotnet (Packages/*/Tests~ のテストプロジェクト)
+bin/
+obj/
+.DS_Store
+
+# build_listing.py の生成物 (zip と listing は Releases / Pages に載せる)
+build/

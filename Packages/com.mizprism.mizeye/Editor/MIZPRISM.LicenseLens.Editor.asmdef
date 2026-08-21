@@ -1,0 +1,18 @@
+{
+  "name": "MIZPRISM.LicenseLens.Editor",
+  "rootNamespace": "Mizprism.LicenseLens.Editor",
+  "references": [
+    "MIZPRISM.LicenseLens.Runtime"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

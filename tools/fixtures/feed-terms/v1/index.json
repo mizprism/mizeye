@@ -1,0 +1,32 @@
+{
+ "chunks": [
+  {
+   "bytes": 435,
+   "path": "items/0a.json",
+   "sha256": "sha256:85d7c99e6952d22762903fb24ccfce69dea847e83a69e848bdfcaeec738c6187"
+  },
+  {
+   "bytes": 15045,
+   "path": "terms/18de8a92.json",
+   "sha256": "sha256:860a563029df512f10396f808d03b1bf3ce210c6201b9cf85276666a679a081d"
+  }
+ ],
+ "counts": {
+  "items": 1,
+  "terms": 1
+ },
+ "data_as_of": "2026-08-07T09:31:00Z",
+ "feed_schema_version": "0.1",
+ "item_shards": 16,
+ "license": {
+  "attribution": "MIZPRISM License Lens (fixture)",
+  "data": "CC-BY-4.0",
+  "quotes": "各規約の権利者に帰属 (著作権法 32 条の引用として最小限で収載)",
+  "url": "https://github.com/mizprism/mizprism/blob/main/LICENSING.md"
+ },
+ "record_schema_versions": [
+  "1.1",
+  "1.2"
+ ],
+ "signing_key_id": "sha256:26f4bde27b6af50c37dd1ef4ca1775a9aeb6d5bf371b61d5b6fec85246133c0c"
+}

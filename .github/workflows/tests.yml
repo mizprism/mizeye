@@ -1,0 +1,66 @@
+# パッケージの回帰ゲート。
+#
+# なぜ要るか: 本リポは「パッケージの正本」であり、利用者はここから VPM 経由で受け取る。
+# 手元で緑なことは利用者にとって何の保証でもない — **clone した状態で緑**であることだけが
+# 保証になる。CI は毎回まっさらな checkout から走るので、このワークフロー自身が
+# 「リポジトリ外のファイルに依存していないか」の恒久的な検出器を兼ねる
+# (2026-08-20 に、テストがリポ外の fixture と .gitignore 対象のルート目印に依存していて
+#  clone した人の手元では全滅する、という壊れ方を実際に踏んでいる)。
+#
+# **ここが塞いでいない範囲** (緑を全体の保証と読まないこと):
+#   - `Editor/` は UnityEditor 依存のため 1 行もコンパイルされない。実 Unity (2022.3) での
+#     コンパイルゲートと視覚スモークゲートは未配備 (Unity ライセンス secrets の登録が要る)
+#   - パッケージ zip / VPM listing の決定論ビルドは、`.meta` が未コミットのため走らせていない
+#     (`tools/build_listing.py` は .meta が揃うまで zip 生成を拒否する)
+
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tests-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  dotnet:
+    # ジョブ名は PR のチェック一覧に出る唯一の名前なので、中身と一致させる
+    # (「フィードキャッシュは Windows で試験されているか」を一覧で監査した時に偽の No を返さないため)。
+    name: C# verifier + feed data layer (${{ matrix.os }})
+    # 対象 OS は Windows と Linux、macOS は対象外。検証器自体は純マネージドでプラット
+    # フォーム非依存だが、フィードキャッシュはファイル I/O とパスと改行を触る。
+    # **配る先の全てで certify する** — 出荷しない OS の緑は保証にならず、出荷する OS の
+    # 緑が欠けているのも同じく保証にならない。
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "10.x"
+
+      # VCC パッケージが読む Ed25519 署名検証は .NET に無いので自前実装を同梱している。
+      # データ層 (取得 → 署名検証 → キャッシュ → 差分) もここで走る。OS matrix が効くのは
+      # 主にこちら。署名対象の fixture は .gitattributes の `tools/fixtures/** -text` が
+      # 改行変換から守っている — この 1 行が無いと Windows でだけ正しい署名が落ちる。
+      # Tests~ は Unity が無視する名前だが dotnet からは通常のディレクトリ。
+      - name: Ed25519 verifier + feed data layer (RFC 8032 vectors, openssl fixture, tamper / cache / rate-limit cases)
+        run: dotnet test "Packages/com.mizprism.mizeye/Tests~/LicenseLens.Tests.csproj" --nologo
+
+      # テストは net10.0 で走るので、**配る土俵 (Unity 2022.3 = netstandard2.1) では
+      # 誰も機械確認していない**状態になりやすい。net10.0 にしか無い API を 1 つ使うと、
+      # テストは緑のまま利用者の環境でだけビルドが落ちる。このステップだけがそれを掴む。
+      # 実測 2026-08-14: File.Move の 3 引数版を Runtime に入れると、このステップは
+      # CS1501 で落ち、上の dotnet test は緑のまま通った。
+      - name: Runtime compiles for Unity's target (netstandard2.1)
+        run: dotnet build "Packages/com.mizprism.mizeye/Tests~/LicenseLens.Runtime.netstandard.csproj" --nologo

@@ -1,0 +1,16 @@
+{
+ "$comment": [
+  "データ層 (フィード取得→署名検証→キャッシュ→差分) の回帰テスト専用の使い捨て鍵。",
+  "秘密鍵は生成直後に破棄しており、どこにも存在しない。",
+  "本番の鍵リングはパッケージに同梱されている。"
+ ],
+ "keys": [
+  {
+   "key_id": "sha256:be78e5995d27fa3ef3b21e80491b714544dfd97db1d56405841ed22b62c91e79",
+   "note": "throwaway key for feed cache tests",
+   "public_key_hex": "e18cf1775b8ba8d3ab5f234d1cdbcc9b5b97c04e6680192fa514c1a75b35584e",
+   "since": "2026-08-14",
+   "status": "current"
+  }
+ ]
+}

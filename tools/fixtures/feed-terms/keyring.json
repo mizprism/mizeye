@@ -1,0 +1,16 @@
+{
+ "$comment": [
+  "TryGetTerms (規約 1 本の引き当て) を end-to-end で測るための使い捨て鍵。",
+  "秘密鍵は生成直後に破棄しており、どこにも存在しない。",
+  "本番の鍵リングはパッケージに同梱されている。"
+ ],
+ "keys": [
+  {
+   "key_id": "sha256:26f4bde27b6af50c37dd1ef4ca1775a9aeb6d5bf371b61d5b6fec85246133c0c",
+   "note": "throwaway key for the terms lookup fixture",
+   "public_key_hex": "a925594cfee33c4a54bda299c243a716fc97546f5e9ee8181c589450185abf0e",
+   "since": "2026-08-14",
+   "status": "current"
+  }
+ ]
+}
