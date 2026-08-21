@@ -102,21 +102,48 @@ namespace Mizprism.LicenseLens
                 { "credit_required", "クレジット表記" }
             };
 
-        /// <summary>permission_matrix の行キー (A..X) の日本語ラベル。条件の帰属先を示すのに使う。</summary>
+        /// <summary>
+        /// permission_matrix の行キー (A..X) の日本語ラベル。条件の帰属先を示すのに使う。
+        ///
+        /// 表記は**規約側の許諾表の行名に合わせている** — 利用者が画面の行を規約本文の行と
+        /// 突き合わせられるようにするため。勝手な言い換えを増やすと、突き合わせが利用者の負担になる。
+        /// </summary>
         private static readonly Dictionary<string, string> MatrixLabels =
             new Dictionary<string, string>(StringComparer.Ordinal)
             {
-                { "A_individual_use", "個人による利用" },
-                { "B_corporate_use", "法人による利用" },
+                // 1. 利用主体
+                { "A_individual_use", "個人利用" },
+                { "B_corporate_use", "法人利用" },
+                // 2. オンラインサービスへのアップロード
+                { "C_upload_social_platform", "ソーシャルコミュニケーションプラットフォームへのアップロード" },
+                { "D_upload_game_platform", "オンラインゲームプラットフォームへのアップロード" },
+                { "E_upload_for_third_party_use", "オンラインサービス内での第三者への利用の許諾" },
+                // 3. センシティブな表現
+                { "F_sexual_expression", "性的表現" },
+                { "G_violent_expression", "暴力的表現" },
+                { "H_political_religious", "政治活動・宗教活動" },
+                // 4. 加工
+                { "I_adjustment", "調整" },
                 { "J_modification", "改変" },
-                { "L_outsource_modification", "改変の外注" },
-                { "M_redistribute_unmodified", "未改変での再配布" },
+                { "K_use_for_modifying_other_data", "他のデータを改変するための利用" },
+                { "L_outsource_modification", "調整・改変の外部委託" },
+                // 5. 再配布・配布
+                { "M_redistribute_unmodified", "未改変状態での再配布" },
                 { "N_distribute_modified", "改変したデータの配布" },
+                // 6. メディア・プロダクトへの使用
                 { "O_video_streaming_broadcast", "映像作品・配信・放送への利用" },
-                { "S_outfit_data_with_mesh_weight", "メッシュ/ウェイトを転用した衣装データ" },
-                { "T_outfit_data_without_mesh_weight", "メッシュ/ウェイトを転用しない衣装データ" },
-                { "U_derivative_works", "二次的著作物" },
-                { "V_credit", "利用時のクレジット表記" }
+                { "P_publishing", "出版物・電子出版物への利用" },
+                { "Q_physical_goods", "有体物（グッズ）への利用" },
+                { "R_product_development", "製品開発等のためのソフトウェアへの組み込み" },
+                // 7. 二次創作
+                { "S_outfit_data_with_mesh_weight", "メッシュやウェイトを転用した衣装データの作成" },
+                { "T_outfit_data_without_mesh_weight", "メッシュやウェイトを転用しない衣装データ・テクスチャの作成" },
+                { "U_derivative_works", "データをモチーフにした二次的著作物（二次創作）の作成" },
+                // 8. その他
+                { "V_credit", "クレジット表記" },
+                { "W_transfer_rights", "権利義務の譲渡等" },
+                // 9. 特記事項
+                { "X_special_notes", "特記事項" }
             };
 
         /// <summary>属性の表示順 (固定)。</summary>
