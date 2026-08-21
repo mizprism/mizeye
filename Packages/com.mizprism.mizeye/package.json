@@ -1,7 +1,7 @@
 {
   "name": "com.mizprism.mizeye",
   "displayName": "MizEye",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "AGPL-3.0-only",
   "unity": "2022.3",
   "description": "MizEye by MIZPRISM\nMizEye（ミズアイ）は、VRChat向け商品の利用規約を整理し、アバター改変やワールド制作で「どんな用途に、どんな条件で使えるか」をUnity上で確認できる利用規約ビューアです。署名付き公開フィードを読み取る read-only ビューアで、プロジェクトを一切変更しません。判定ではなく整理を返します。",

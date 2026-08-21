@@ -146,6 +146,29 @@ namespace Mizprism.LicenseLens
                 { "X_special_notes", "特記事項" }
             };
 
+        /// <summary>
+        /// 構造化の確度 (スキーマの enum: high / medium / low) の日本語表記。
+        ///
+        /// **知らない値はそのまま返す** — 属性値と同じ規律で、握り潰すと利用者は
+        /// 「確度の情報が無い」と読むが、実際には情報はあってビューアが古いだけになる。
+        /// スキーマが値を足した時にここが赤くなるよう、収録データ全件に対する検査を
+        /// 適合スイート側に置いてある (条項ラベルと同型)。
+        /// </summary>
+        private static readonly Dictionary<string, string> ConfidenceLabels =
+            new Dictionary<string, string>(StringComparer.Ordinal)
+            {
+                { "high", "高" },
+                { "medium", "中" },
+                { "low", "低" }
+            };
+
+        public static string ConfidenceLabel(string raw)
+        {
+            if (string.IsNullOrEmpty(raw)) return string.Empty;
+            string label;
+            return ConfidenceLabels.TryGetValue(raw, out label) ? label : raw;
+        }
+
         /// <summary>属性の表示順 (固定)。</summary>
         public static IReadOnlyList<string> OrderedAttributeKeys => AttributeOrder;
 
