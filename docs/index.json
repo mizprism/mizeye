@@ -5,7 +5,24 @@
   "url": "https://mizprism.github.io/mizeye/index.json",
   "packages": {
     "com.mizprism.mizeye": {
-      "versions": {}
+      "versions": {
+        "0.1.0": {
+          "name": "com.mizprism.mizeye",
+          "displayName": "MizEye",
+          "version": "0.1.0",
+          "license": "AGPL-3.0-only",
+          "unity": "2022.3",
+          "description": "MizEye by MIZPRISM\nMizEye（ミズアイ）は、VRChat向け商品の利用規約を整理し、アバター改変やワールド制作で「どんな用途に、どんな条件で使えるか」をUnity上で確認できる利用規約ビューアです。署名付き公開フィードを読み取る read-only ビューアで、プロジェクトを一切変更しません。判定ではなく整理を返します。",
+          "author": {
+            "name": "MIZPRISM",
+            "url": "https://github.com/mizprism"
+          },
+          "vpmDependencies": {},
+          "hideInEditor": false,
+          "url": "https://github.com/mizprism/mizeye/releases/download/v0.1.0/com.mizprism.mizeye-0.1.0.zip",
+          "zipSHA256": "b3289c0b5fce3d4d624a33a9405ebbbdcee12996ead7ec1f7fb3751ddc3eaa80"
+        }
+      }
     }
   }
 }
